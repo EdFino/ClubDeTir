@@ -1,14 +1,21 @@
 body {
+    text-align: center;
     display: grid;
     justify-items: center;
 }
 
-.menu-nav {
-    
+ul {
+    list-style-type: none;
 }
-
-
 
 h1 {
     color : red;
+}
+
+.menu-nav {
+
+}
+
+#image-de-tête {
+    width: 100vw;
 }

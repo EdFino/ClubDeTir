@@ -1,43 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
     <link rel="stylesheet" href="asset/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
+
 <body>
     <header>
         <h1>Club de Tir - Créteil</h1>
         <img src="images/stands.jpg" alt="Stands de tir" id="image-de-tête" />
-        <nav>
-            <ul class="menu-nav">
-                <a href="#info"><li>Informations Club</li></a>
-                <a href="#news"><li>Les news du Club</li></a>
-                <a href="#salles"><li>Nos salles</li></a>
-                <a href="#armes"><li>Les armes</li></a>
-                <a href="#tarifs"><li>Nos tarifs</li></a>
-                <a href="legislation"><li>Législation</li></a>
-
-            </ul>
-        </nav>
-        <h2>Devenir membre</h2>
-        <h2>Connexion</h2>
+        <div class="bottom-header">
+            <nav>
+                <ul>
+                    <a href="#info" class="invisible-content"><li>Informations Club</li></a>
+                    <a href="#news" class="invisible-content"><li>Les news du Club</li></a>
+                    <a href="#salles"><li>Nos salles</li></a>
+                    <a href="#armes"><li>Les armes</li></a>
+                    <a href="#tarifs"><li>Nos tarifs</li></a>
+                    <a href="#legislation"><li>Législation</li></a>
+                </ul>
+            </nav>
+            <div class="important-components">
+                <button class="important-component">DEVENIR MEMBRE</button>
+                <button class="important-component">CONNEXION</button>
+            </div>
+        </div>
     </header>
     <main>
-        <h2 id="info">Informations Club</h2>
-        <p>Association du club de tir de Créteil, nous vous accueillons ici !
-            <h3>Horaires</h3>
-        <p>
-            Lundi à Vendredi : 15h à 20h<br />
-            Samedi : 10h à 20h <br/>
-            Dimanche : Fermeture  </p>
-        <h3>Adresse</h3>
-        <h2 id="news">Les news du Club</h2>
-        <p>Nous mettrons ici trois news du club exceptés en mode portable où il n'y en aura qu'une seule, plus un lien vers <a href="NewsPage.html">la vraie page</a> </p>
-        <h2 id="salles">Nos salles</h2>
-        <p> Nous possédons plein de salles n'est-ce pas ?</p>
+        <div class="invisible-content">
+            <h2 id="info">Informations Club</h2>
+            <p>Association du club de tir de Créteil, nous vous accueillons ici !</p>
+        </div>
+
+        <div class="first-info">
+            <div class="horaire-adresse">
+                <div class="card text-bg-dark mb-3 " style="max-width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Horaires</h5>
+                      <p class="card-text"><span class="important">Lun - Ven</span> 15h - 20h<br />
+                        <span class="important">Sam</span> 10h - 20h <br/>
+                        <span class="important">Dim</span> Fermeture  </p>
+                    </div>
+                  </div>
+
+                  <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Adresses</h5>
+                      <p class="card-text">
+                        <i class="bi bi-map-fill"></i> 6 Rue Thomas Edison, 94000 Créteil<br/>
+                        <i class="bi bi-telephone-fill"></i><a href="tel:0149819268"> 0149819268</a></br/>
+                        <i class="bi bi-envelope-at-fill"></i><a href="mailto:clubdetircreteil@gmail.com"> clubdetircreteil@gmail.com</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                    <img src="images/news-one.jpg" class="card-img-top" alt="News du jour">
+                    <div class="card-body"> <a href="ClubPage.html">
+                      <h5 class="card-title-news">Nos participants pour le championnat régional</h5>
+                      <p class="card-text-news">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                      </p>
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </a></div>
+                  </div>
+        </div>
+
+        <div class="stand">
+            <h2 id="salles">Nos salles</h2>
+            <p class="invisible-content"> Nous possédons plein de salles n'est-ce pas ?</p>
+            <img src="images/stand.jpg" alt="Un stand de tir" id="image-stand" />
+        </div>
+
         <h2 id="armes">Les armes</h2>
         <p>Voir nos différentes armes ici, il y a pas mal de modèles différents.</p>
         <h2 id="tarifs">Nos tarifs</h2>
@@ -47,6 +90,9 @@
 
 
     </main>
+
+
+
     <footer>
         <h3>Horaires</h3>
         <p>

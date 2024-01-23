@@ -15,7 +15,10 @@ header {
 h1 {
     order: 1;
     font-weight: bold;
+    color: white;
+    order: 0;
 }
+
   
 
 .bottom-header {
@@ -23,10 +26,11 @@ h1 {
     order: 3;
     margin-top:-120px;
     background-color: none;
+    z-index: 2;
 }
 
 .bottom-header:hover {
-    background-color: rgba(54, 54, 53, 0.7);
+    background-color: rgba(54, 54, 53, 0.8);
     transition: background-color 0.4s ease;
 }
 
@@ -79,7 +83,7 @@ nav > ul {
     justify-content: space-around;
 }
 
-.invisible-content {
+.invisible-content-mobile {
     display: none;
 }
 
@@ -109,14 +113,41 @@ nav > ul {
     order: 2;
 }
 
-#image-stand {
+#image-stand, #image-arme {
     width: 100%;
     height: auto;
 }
 
-h1 {
-    color: white;
-    order: 0;
+
+.stand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#stands {
+    color: #ff8000;
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    top: 70px;
+    background-color: rgba(54, 54, 53, 0.8);
+    text-align: center;
+    width: auto;
+    font-size: 45px;
+}
+
+.btn {
+    color: #ff8000;
+    max-width: 60%;
+    position: relative;
+    top: 50px;
+    z-index: 3;
+}
+
+img:hover {
+    filter: contrast(70%);
 }
 
 a:link {

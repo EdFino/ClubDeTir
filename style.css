@@ -146,6 +146,53 @@ nav > ul {
     z-index: 3;
 }
 
+.tarifs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.offre-classe {
+    max-width: 40vw;
+    border: 1.5px solid #ff8000;
+    border-radius: 5px;
+    background-color: #2B2B28;
+    padding: 15px 40px 15px 40px;
+    margin: 15px;
+}
+
+.offre-classe > h2 {
+    
+    font-size: 3em;
+}
+
+.price-tarif {
+    display: flex;
+    justify-content: center;
+}
+
+.price-tarif > h2 {
+    color:#ff8000;
+    font-size: 2.7em;
+}
+
+.price-tarif > p {
+    color:white;
+}
+
+.offre-classe > h3 {
+    color: white;
+    font-size: 1em;
+}
+
+.offre-classe > p {
+    color: #A4A09A;
+}
+
+.btn-danger {
+    color: white;
+}
+
 img:hover {
     filter: contrast(70%);
 }

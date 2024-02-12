@@ -259,7 +259,7 @@ a:hover {
 
   }
   
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 768px) and (max-width:1023px) {
 
     #image-de-tête {
         order: 1;

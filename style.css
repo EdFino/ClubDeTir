@@ -89,7 +89,6 @@ nav > ul {
     border: solid #ff8000;
     color: #ff8000;
     border-radius: 12px;
-    transition: font-size 0.4s ease, color 0.4s ease;
     margin: 10px;
 }
 
@@ -97,7 +96,6 @@ nav > ul {
     color: orange;
     border: solid orange;
     font-size: 18px;
-    transition: font-size 0.4s ease-out, color 0.4s ease-out;
 }
 
 .all-news {
@@ -107,15 +105,6 @@ nav > ul {
 #image-stand, #image-arme {
     width: 100%;
     height: auto;
-}
-
-
-.stand {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
 }
 
 h3 {
@@ -128,10 +117,12 @@ h3 {
 
 .btn {
     color: #ff8000;
-    max-width: 60%;
+    max-width: 40%;
     position: relative;
-    top: 50px;
+    top: 60px;
     z-index: 3;
+    text-align: center;
+    right: auto;
 }
 
 .tarifs {
@@ -186,9 +177,8 @@ footer {
     background-color: #2B2B28;
     color: #ff8000;
     margin-top: 30px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
 }
 
 img:hover {
@@ -248,6 +238,15 @@ a:hover {
         align-items: center;
     }
 
+    .important-component {
+        transition: font-size 0.4s ease, color 0.4s ease;
+    }
+
+    .important-component:hover {
+        transition: font-size 0.4s ease-out, color 0.4s ease-out;
+
+    }
+
     .invisible-content-mobile {
         display: none;
     }
@@ -255,6 +254,16 @@ a:hover {
     .bottom-header:hover {
         background-color: rgba(54, 54, 53, 0.8);
         transition: background-color 0.4s ease;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    footer > .card {
+        width: 50vw;
     }
 
   }
@@ -300,6 +309,13 @@ a:hover {
         max-width: 40vw;
     }
 
+    .info-stand {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .invisible-content-small-screen {
         display: none;
     }
@@ -310,13 +326,107 @@ a:hover {
 
     footer {
         flex-direction: row;
-        width: 100%;
     }
 
 
 }
   
   @media only screen and (min-width: 1024px) {
-    /* Styles spécifiques aux écrans d'au moins 1024px de large */
-  }
+    #image-de-tête {
+        display: none;
+        }
 
+    header {
+        width: 100%;
+        background: url('images/stands.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        }
+
+    h1 {
+
+        padding: 5px;
+        margin: 10px;
+        border: 5px solid white;
+        font-size: 3em;
+        }
+
+    .bottom-header {
+        align-self: flex-start;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    li {
+        padding:5px;
+        margin: 5px;
+        border: 1.5px solid #ff8000;
+        background-color: #ff8000;
+        border-radius: 40px;
+        font-size: 1.15em;
+
+    }
+
+    .important-components {
+        display: flex;
+        flex-direction: column;
+        border: 3px solid black;
+        background-color: rgba(54, 54, 53);
+        margin: 3px;
+    }
+
+    .important-component {
+        transition: none;
+        font-size: 1.1em;
+    }
+
+    .important-component:hover {
+        transition: none;
+        font-size: initial;
+        }
+    
+    .first-info {
+        flex-direction: column;
+    }
+
+    .horaire-adresse {
+        display: flex;
+        order: -1;
+        position: absolute;
+        bottom: 12em;
+        }
+    
+    .horaire-adresse > .card > .card-body {
+        background-color: rgba(54, 54, 53, 0.9);
+    }
+
+    .stand, .armes, .legislations {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn {
+        position: static;
+    }
+
+    .armes {
+        flex-direction: row-reverse;
+    }
+
+    .buttons-legislation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons-legislation > .btn {
+        margin: 5px;
+    }
+    }

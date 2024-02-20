@@ -102,7 +102,7 @@ nav > ul {
     display: flex;       
 }
 
-#image-stand, #image-arme {
+#image-stand, #image-arme, #image-legislation-public {
     width: 100%;
     height: auto;
 }
@@ -244,7 +244,15 @@ a:hover {
 
     .important-component:hover {
         transition: font-size 0.4s ease-out, color 0.4s ease-out;
+    }
 
+    .horaire-adresse {
+        margin-left: 0.7em;
+    }
+
+    .all-news {
+        margin-right: 1em;
+        margin-top: 1em;
     }
 
     .invisible-content-mobile {
@@ -256,14 +264,31 @@ a:hover {
         transition: background-color 0.4s ease;
     }
 
+    #tarifs {
+        margin-top: 1.1em;
+    }
+
+    .tarifs {
+        justify-content: center;
+    }
+
+    .offre-classe {
+        max-width: 35vw;
+        border-radius: 25px;
+    }
+
     footer {
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
+        width: 70vw;
+        background-color: black;
+        border-radius: 15px;
     }
 
     footer > .card {
-        width: 50vw;
+        width: 60vw;
+        border-radius: 20px;
     }
 
   }
@@ -332,6 +357,7 @@ a:hover {
 }
   
   @media only screen and (min-width: 1024px) {
+    
     #image-de-tête {
         display: none;
         }
